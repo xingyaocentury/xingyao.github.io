@@ -1,0 +1,52 @@
+{
+  "app": {
+    "bundleName": "com.example.xingyao_flutter_hm",
+    "bundleType": "app",
+    "versionCode": 1000000,
+    "versionName": "1.0.0",
+    "label": "xingyao_flutter_hm",
+    "deployDomain": "github.com",
+    "icons": {
+      "normal": "标准图标下载链接",
+      "large": "大图标下载链接"
+    },
+    "minAPIVersion": "4.1.0(11)",
+    "targetAPIVersion": "4.1.0(11)",
+    "modules": [
+      {
+        "name": "module1",
+        "type": "entry",
+        "deviceTypes": [
+          "tablet",
+          "2in1",
+          "phone"
+        ],
+        "packageUrl": "HAP包下载链接",
+        "packageHash": "HAP包sha256值"
+      },
+      {
+        "name": "module2",
+        "type": "feature",
+        "deviceTypes": [
+          "tablet",
+          "2in1",
+          "phone"
+        ],
+        "packageUrl": "HAP包下载链接",
+        "packageHash": "HAP包sha256值"
+      },
+      {
+        "name": "module3",
+        "type": "shared",
+        "deviceTypes": [
+          "tablet",
+          "2in1",
+          "phone"
+        ],
+        "packageUrl": "HSP包下载链接",
+        "packageHash": "HSP包sha256值"
+      }
+    ]
+  },
+   "sign": "描述文件签名"
+}
