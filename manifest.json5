@@ -7,46 +7,24 @@
     "label": "xingyao_flutter_hm",
     "deployDomain": "github.com",
     "icons": {
-      "normal": "标准图标下载链接",
-      "large": "大图标下载链接"
+      "normal": "https://xingyaocentury.github.io/xingyao.github.io/xingyao.png",
+      "large": "https://xingyaocentury.github.io/xingyao.github.io/xingyao.png"
     },
     "minAPIVersion": "4.1.0(11)",
     "targetAPIVersion": "4.1.0(11)",
     "modules": [
       {
-        "name": "module1",
+        "name": "entry",
         "type": "entry",
         "deviceTypes": [
           "tablet",
           "2in1",
           "phone"
         ],
-        "packageUrl": "HAP包下载链接",
-        "packageHash": "HAP包sha256值"
-      },
-      {
-        "name": "module2",
-        "type": "feature",
-        "deviceTypes": [
-          "tablet",
-          "2in1",
-          "phone"
-        ],
-        "packageUrl": "HAP包下载链接",
-        "packageHash": "HAP包sha256值"
-      },
-      {
-        "name": "module3",
-        "type": "shared",
-        "deviceTypes": [
-          "tablet",
-          "2in1",
-          "phone"
-        ],
-        "packageUrl": "HSP包下载链接",
-        "packageHash": "HSP包sha256值"
+        "packageUrl": "https://xingyaocentury.github.io/xingyao.github.io/xingyao.app",
+        "packageHash": "097b4ef8200f12fde38a4807c3b4afdc397aaeca"
       }
     ]
   },
-   "sign": "描述文件签名"
+   "sign": ""
 }
