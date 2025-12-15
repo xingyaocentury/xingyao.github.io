@@ -1,29 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>鸿蒙内部测试安装</title>
-</head>
-<body>
-  <h2>鸿蒙内部测试应用</h2>
-  <button id="install-btn">点击安装</button>
-
-  <script>
-    document.getElementById('install-btn').addEventListener('click', function() {
-      // 1. 检查是否华为浏览器
-      var ua = navigator.userAgent.toLowerCase();
-      if (ua.indexOf('huawei') === -1 && ua.indexOf('huaweibrowser') === -1) {
-        alert('请使用华为浏览器访问安装');
-        return;
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Button Open DeepLink Example</title>
+    <script>
+      function openDeepLink() {
+        let url ='store://enterprise/manifest?url=https://xingyaocentury.github.io/xingyao.github.io/manifest.json5'
+        window.open(url, '_parent')
       }
-
-      // 2. 构造 Deeplink
-      var manifestUrl = encodeURIComponent('https://xingyaocentury.github.io/xingyao.github.io/manifest.json5');
-      var deeplink = 'store://enterprise/manifest?url=' + manifestUrl;
-
-      // 3. 用户点击触发 Deeplink
-      window.location.href = deeplink;
-    });
-  </script>
-</body>
+    </script>
+  </head>
+  <body>
+    <button onclick="openDeepLink()">下载</button>
+  </body>
 </html>
