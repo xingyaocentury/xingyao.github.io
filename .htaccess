@@ -1,0 +1,6 @@
+<IfModule mod_headers.c>
+  Header set Accept-Ranges bytes
+  RewriteEngine on
+  RewriteCond %{HTTP:Range} bytes=(+)-(*) [NC]
+  RewriteRule .* - [E=HTTP_RANGE:%1-%2]
+</IfModule>
