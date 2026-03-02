@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button Open DeepLink Example</title>
+    <script>
+        function openDeepLink() {
+          let url ='store://enterprise/manifest?url=https://agc-storage-drcn.platform.dbankcloud.cn/v0/spcloud-g2spx/new-manifest.json5?token=67365400-c9d7-4322-ab65-3cfc8c00c084'
+          window.open(url, '_parent')
+        }
+    </script>
+</head>
+<body>
+<button onclick="openDeepLink()">下载</button>
+</body>
+</html>
